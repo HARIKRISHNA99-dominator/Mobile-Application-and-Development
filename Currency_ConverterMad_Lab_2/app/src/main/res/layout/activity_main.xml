@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="351dp"
+        android:layout_height="94dp"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:inputType="textPersonName"
+        android:text="Currency Converter"
+        android:textAlignment="center"
+        android:textColor="#09D812"
+        android:textColorLink="#08E411"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/T1"
+        android:layout_width="259dp"
+        android:layout_height="70dp"
+        android:ems="10"
+        android:hint="in rs"
+        android:inputType="none|text"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText"
+        app:layout_constraintVertical_bias="0.172" />
+
+
+    <RadioGroup
+        android:id="@+id/radiogroup"
+        android:layout_width="270dp"
+        android:layout_height="141dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.234"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/T1"
+        app:layout_constraintVertical_bias="0.0">
+
+        <RadioButton
+            android:id="@+id/Usd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="USD"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+        <RadioButton
+            android:id="@+id/Euro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="EURO"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+        <RadioButton
+            android:id="@+id/Yen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="YEN"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/convert"
+        android:layout_width="125dp"
+        android:layout_height="47dp"
+        android:text="CONVERT"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radiogroup"
+        app:layout_constraintVertical_bias="0.367" />
+
+    <TextView
+        android:id="@+id/T2"
+        android:layout_width="55dp"
+        android:layout_height="27dp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/T1"
+        app:layout_constraintVertical_bias="0.77"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
